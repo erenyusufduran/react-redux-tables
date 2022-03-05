@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 
 const App = () => {
   return (
@@ -9,9 +10,7 @@ const App = () => {
       <ToastContainer />
       <Navbar />
       <Switch>
-        <Route exact path="/">
-          <h1>Welcome to React App</h1>
-        </Route>
+        <Route exact path="/" component={() => <Home />} />
         <Route exact path="/add">
           <h1>Add Component</h1>
         </Route>
