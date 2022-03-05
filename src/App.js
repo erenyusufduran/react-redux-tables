@@ -4,6 +4,7 @@ import { ToastContainer } from "react-toastify";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import AddContact from "./components/AddContact";
+import EditContact from "./components/EditContact";
 
 const App = () => {
   return (
@@ -16,7 +17,7 @@ const App = () => {
           <AddContact />
         </Route>
         <Route exact path="/edit/:id">
-          <h1>Edit Component</h1>
+          <EditContact />
         </Route>
       </Switch>
     </div>
