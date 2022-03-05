@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-12 my-5">
+        <div className="col-md-12 my-5 text-right">
           <Link to="/add" className="btn btn-outline-dark float-right">
             Add Contact
           </Link>
